@@ -204,6 +204,11 @@ $(document).on("keypress", function (e) {
   } finally {
     _iterator.f();
   }
+}); // 搜索栏阻止冒泡
+
+var $searchForm = $(".searchForm");
+$searchForm.on("keypress", function (e) {
+  e.stopPropagation();
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.0c814f95.js.map
+//# sourceMappingURL=main.27fd0da2.js.map

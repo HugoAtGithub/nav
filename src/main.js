@@ -72,3 +72,8 @@ $(document).on("keypress", (e) => {
     }
   }
 });
+// 搜索栏阻止冒泡
+const $searchForm = $(".searchForm");
+$searchForm.on("keypress", (e) => {
+  e.stopPropagation()
+})
